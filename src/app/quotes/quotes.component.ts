@@ -15,6 +15,10 @@ export class QuotesComponent implements OnInit {
     new Quotes(  "Fifth quote","author","person", "description")
   ]
 
+  toggleDetails(index: number){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+
   
   constructor() { }
 
