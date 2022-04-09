@@ -7,6 +7,10 @@ import { Quotes } from '../quotes';
 })
 export class QuotesComponent implements OnInit {
 
+  quote:Quotes[]=[
+    new Quotes( 1, "author","First quote","person")
+  ]
+
   
   constructor() { }
 
