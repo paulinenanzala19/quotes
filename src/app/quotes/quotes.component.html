@@ -1,27 +1,29 @@
-<!-- <div class="form">
-    <app-quote-form  (addQuote)="addNewQuote($event)"></app-quote-form>
-</div> -->
 
-
-<ul *ngFor="let quote of quotes; let i=index">
-    <li appHighlight>{{quote.quote}}</li>
-    <div *ngIf="quote.showDescription">
-        <app-quote-detail [quote]="quote"></app-quote-detail>
-        
-    </div>
-
-    <div >
-       
-
-        <button (click)='toggleDetails(i)' class="btn btn-info">Toggle Details</button>
-    </div>
-    <div class="button">
-        <p>{{ quote.votes}}</p>
-        <button (click)="quote.upvote()" type="button" class="btn btn-outline-info">Upvote</button>
-        <button (click)="quote.downvote()" id="btn" type="button" class="btn btn-outline-warning">Downvote</button>
-    </div>
+<div class="card mb-4 " *ngFor="let quote of quotes; let i=index">
+    <ul>
+        <li appHighlight>{{quote.quote}}</li>
+        <div >
+           
     
-</ul>
+            <button (click)='toggleDetails(i)' class="mt-2 btn btn-outline-info">Show more</button>
+        </div>
+        <div class="button">
+            <p>{{ quote.votes}}</p>
+            <button (click)="quote.upvote()" type="button" class="btn btn-outline-info">Upvote</button>
+            <button (click)="quote.downvote()" id="btn" type="button" class="btn btn-outline-danger">Downvote</button>
+        </div>
+    
+        
+        <div *ngIf="quote.showDescription">
+            <app-quote-detail [quote]="quote" (isComplete)="deleteQuote($event,i)"></app-quote-detail>
+            
+        </div>
+    
+        
+    </ul>
+
+</div>
+
 <div class="form">
     <app-quote-form  (addQuote)="addNewQuote($event)"></app-quote-form>
 </div>

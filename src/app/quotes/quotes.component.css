@@ -5,7 +5,14 @@
     margin-left: 1%;
 }
 .form{
-    width: 100%;
-    margin-left: 120%;
-    margin-top: -165%;
+    width: 100%;  
+    border: 1px solid lightblue;
+    margin-left: 110%;
+    margin-top: -195%;
+    position: relative;
+    
+}
+.card{
+    display: flex;
+    
 }
