@@ -13,6 +13,7 @@ This is a web application angular quotes which is a platform where a person can 
 ## screenshot
 
 ## Live link
+ https://paulinenanzala19.github.io/quotes/
 
 
 ## Installation / Setup instruction
@@ -46,7 +47,7 @@ This is a web application angular quotes which is a platform where a person can 
 | quote being posted  | quote | quote
 | author of the quote   |  name of the author  |name of the author    |
 | click button show details  |       |  quote details   |
-|  |  click button upvote   |  |  increments votes by 1    | 
+|  click button upvote   |  |  increments votes by 1    | 
 | click button downvote |    | decreses popular votes by 1|
 | click add button |     | add new quote and the functionalities  |
 | click delete button |     | gets an alert to confirm whether todelete or not,deletes the quote| |
