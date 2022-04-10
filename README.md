@@ -1,27 +1,65 @@
-# AngularQuotes
+# Angular Qotes
+## Author
+pauline Wafula
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
-## Development server
+### Version
+10/04/2022
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+This is a web application angular quotes which is a platform where a person can be able to post a quote and the author.A person is also able to upvote or downvote a quote depending on what they like.The application is also able to show when the quote was posted and its able to show complete days.     A person is also able to toggle to view more details.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## screenshot
 
-## Build
+## Live link
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Installation / Setup instruction
+* Open Terminal {Ctrl+Alt+T}
+* Install Angular
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* git clone ```https://github.com/paulinenanzala19/quotes.git```
 
-## Running end-to-end tests
+* cd angularQuotes
+* create an angular app through running this command $ ng new quote
+* Generate components quote detail and quote form by running the command $ ng generate component quote detail and ng generate component quote form
+* generate a highlight directive by running  the command $ ng generate directive highlight
+* generate a time pipe count that keeps track of time by running the command $ ng generate pipe date-count
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+* code . or atom . depending on the text editor of your choice.
 
-## Further help
+## Technologies Used
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* [TypeScript]
+* [HTML5]
+* [CSS]
+* [Bootstrap4]
+* [Javascript]
+* markdown
+
+
+## BDD
+| Behaviour      | Input        | Output       |
+| :------------- | :----------: | -----------: |
+|  person posting the quote  |  name  |   name   |
+| quote being posted  | quote | quote
+| author of the quote   |  name of the author  |name of the author    |
+| click button show details  |       |  quote details   |
+|  |  click button upvote   |  |  increments votes by 1    | 
+| click button downvote |    | decreses popular votes by 1|
+| click add button |     | add new quote and the functionalities  |
+| click delete button |     | gets an alert to confirm whether todelete or not,deletes the quote| |
+
+
+## Known Bugs
+
+* The highlight directive was unable to highlight the quote with the top upvote alone
+
+## Contact Information 
+
+If you have any question or contributions that would better this app, please email me at [paulinenanzala19@gmail.com]
+
+## License
+* *MIT License:*
+* Copyright (c) 2022 **Pauline Wafula**
