@@ -13,7 +13,7 @@ export class QuoteFormComponent implements OnInit {
   name:string;
 
   
-  newQuote = new Quotes("","","","",0);
+  newQuote = new Quotes("","","","",new Date(),0);
   @Output() addQuote = new EventEmitter<Quotes>();
   
   submitQuote(newQuote,quoteform){

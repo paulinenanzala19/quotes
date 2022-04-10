@@ -10,11 +10,11 @@ export class QuotesComponent implements OnInit {
   votes: number=0
 
   quotes:Quotes[]=[
-    new Quotes(  "First quote","author","person","description"),
-    new Quotes(  "Second quote","author","person","description"),
-    new Quotes(  "Third quote","author","person", "description"),
-    new Quotes(  "Fourth quote","author","person", "description"),
-    new Quotes(  "Fifth quote","author","person", "description")
+    new Quotes(  "First quote","author","person","description",new Date(2019,3,4)),
+    new Quotes(  "Second quote","author","person","description", new Date(2014,2,1)),
+    new Quotes(  "Third quote","author","person", "description", new Date(2016,4,7)),
+    new Quotes(  "Fourth quote","author","person", "description",new Date(2010,5,2)),
+    new Quotes(  "Fifth quote","author","person", "description", new Date(2021,10,3))
   ]
 
   toggleDetails(index: number){

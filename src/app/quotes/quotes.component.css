@@ -5,14 +5,20 @@
     margin-left: 1%;
 }
 .form{
-    width: 100%;  
+    width: 60%;  
     border: 1px solid lightblue;
-    margin-left: 110%;
-    margin-top: -195%;
-    position: relative;
+   
+
+   
     
 }
-.card{
-    display: flex;
+ul li{
+    list-style-type: none;
+  
     
+    
+}
+.col .display{
+    width: 70%;
+
 }
