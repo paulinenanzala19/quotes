@@ -7,6 +7,7 @@ import { Quotes } from '../quotes';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
+  votes: number=0
 
   quotes:Quotes[]=[
     new Quotes(  "First quote","author","person","description"),
@@ -19,6 +20,15 @@ export class QuotesComponent implements OnInit {
   toggleDetails(index: number){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
+
+  addNewQuote(quote){
+   this.quotes.push(quote)
+   console.log(quote)
+
+  }
+
+
+ 
 
   
   constructor() { }
