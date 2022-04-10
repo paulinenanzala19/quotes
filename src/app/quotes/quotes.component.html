@@ -6,18 +6,18 @@
                 <div class="col-md-6"style="color:white">
                     <ul *ngFor="let quote of quotes; let i=index">
                         <li style="color:black" appHighlight>{{quote.quote}}</li>
-                        <p ></p>
+                        <p >This was posted on {{quote.completeDate|date}}</p>
                         <div class="details">
             
             
                             <button (click)='toggleDetails(i)' class="mt-2 btn btn-outline-info">Show more</button>
                         </div>
                         <div class="button" style="color:white">
-                            <p>{{ quote.votes}}</p>
-                            <button (click)="quote.upvote()" type="button" class="btn btn-outline-info">Upvote</button>
-                            <p>{{quote.vote}}</p>
+                            
+                            <button (click)="quote.upvote()" type="button" class="btn btn-outline-info">{{ quote.votes}}<i class="fa-solid fa-thumbs-up"></i></button>
+                           
                             <button (click)="quote.downvote()" id="btn" type="button"
-                                class="btn btn-outline-danger">Downvote</button>
+                                class="btn btn-outline-danger"><i class="fa-solid fa-thumbs-down"> {{quote.vote}}</i></button>
                         </div>
             
             
