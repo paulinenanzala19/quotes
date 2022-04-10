@@ -1,4 +1,4 @@
-# Angular Qotes
+# Angular Quotes
 ## Author
 pauline Wafula
 
